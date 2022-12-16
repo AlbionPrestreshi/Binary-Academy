@@ -432,4 +432,94 @@ padding-right: 0;
         transform: translateX(-300);
     }
 }
+.form {
+    height: 58vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    background-image: linear-gradient(to top right, white, silver)
+}
+
+.login {
+    background-color: aliceblue;
+    border-radius: 7px;
+    max-width: 440px;
+    width: 100%;
+    padding: 40px;
+
+
+}
+
+header {
+    text-align: center;
+    color: black;
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+form {
+    margin-top: 35px;
+
+}
+
+form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 430;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+}
+
+.field input {
+    padding: 0 15px;
+    border: 1px solid paleturquoise;
+
+
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+.forgot span,
+.forgot a {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+.forgot a {
+    text-decoration: none;
+    color: blue;
+
+
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+
+}
+
 
