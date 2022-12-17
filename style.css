@@ -47,7 +47,7 @@
     display: table;
     float: left;
     padding: 0px 19px;
-    background-image: linear-gradient(to top right, black, lightblue)
+    background-image: linear-gradient(to top right, black, #83b5e8);
    
 }
 .lista a:last-child{
