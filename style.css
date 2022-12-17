@@ -70,3 +70,456 @@ padding-right: 0;
     padding-right: 35px;
 
 }
+
+.fotografia {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 600px;
+    transition: .5s ease;
+   /* backface-visibility: hidden;*/
+}
+
+.permbajtja {
+    position: relative;
+    width: 100%;
+}
+
+.permbajtja:hover .fotografia {
+    opacity: 0.6;
+
+}
+
+.permbajtja:hover .mesi {
+    opacity: 1;
+
+}
+
+.mesi {
+    transition: .10s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button1 {
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(3deg, #fdf7f7, black);
+
+
+
+}
+
+.fotoja img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+
+.foto {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 10px;
+
+}
+
+.foto {
+    position: relative;
+    top: 0px;
+}
+
+.fotoja ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.fotoja ul li {
+    color: white;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    /* transition:  background .5s; */
+
+}
+
+.fotoja ul li:hover {
+    background: linear-gradient(to top right, black, silver);
+    cursor: pointer;
+    /* transition: background .5s; */
+}
+
+.main .foto {
+    margin: 80px auto;
+}
+
+.kolona-majtas {
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+.kolona-djathtas {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.button_1 {
+
+    width: 70px;
+    height: 20px;
+    background: linear-gradient(to top right, white, silver);
+}
+
+.button_1:hover {
+    background: linear-gradient(to top right, silver, black);
+
+}
+
+.button_2 {
+
+    width: 70px;
+    height: 20px;
+    background: linear-gradient(to top right, white, silver);
+
+}
+
+.button_2:hover {
+    background: linear-gradient(to top right, silver, black);
+}
+
+.button_3 {
+
+    width: 70px;
+    height: 20px;
+    background: linear-gradient(to top right, white, silver);
+
+}
+
+.button_3:hover {
+    background: linear-gradient(to top right, silver, black);
+}
+.fundi {
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+.fundi:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.trajnimi-kolona {
+    width: 29%;
+    float: left;
+    padding: 10px;
+    background: white;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px silver;
+    border-style: solid;
+    border-width: 1px;
+    background-image: linear-gradient(to top right, white, silver)
+}
+
+.text {
+    color: dimgrey;
+}
+
+
+
+#div1:hover {
+    width: 200px;
+}
+
+#div2:hover {
+    width: 200px;
+}
+
+#div3:hover {
+    width: 200px;
+}
+
+#div1 {
+    transition-timing-function: linear;
+    background: darkcyan;
+    width: 100px;
+    height: 10px;
+    color: white;
+    padding: 30px;
+    transition: width 3s;
+    display: block;
+    background-image: linear-gradient(25deg, black, #83b5e8);
+}
+
+#div2 {
+    transition-timing-function: linear;
+    background: darkcyan;
+    width: 100px;
+    height: 10px;
+    color: white;
+    padding: 30px;
+    transition: width 3s;
+    display: block;
+    background-image: linear-gradient(to top right, #83b5e8, black)
+}
+
+#div3 {
+    transition-timing-function: linear;
+    background: darkcyan;
+    width: 100px;
+    height: 10px;
+    color: white;
+    padding: 30px;
+    transition: width 3s;
+    display: block;
+    background-image: linear-gradient(85deg, black, #83b5e8);
+}
+
+.buttonD_1 {
+
+    width: 70px;
+    height: 20px;
+    background: silver;
+
+    background: linear-gradient(to top right, #83b5e8, black);
+
+}
+
+.buttonD_1:hover {
+    background: linear-gradient(to top right, black, #83b5e8);
+
+}
+
+.buttonD_2 {
+
+    width: 70px;
+    height: 20px;
+    background: silver;
+    background: linear-gradient(to top right, black, #83b5e8);
+
+
+
+}
+
+.buttonD_2:hover {
+    background: linear-gradient(to top right, #83b5e8, black);
+}
+
+.buttonD_3 {
+
+    width: 70px;
+    height: 20px;
+    background: silver;
+    background: linear-gradient(to top right, #83b5e8, black);
+
+
+
+}
+
+.buttonD_3:hover {
+    background: linear-gradient(to top right, black, #83b5e8);
+}
+
+
+
+.container {
+    width: 100%;
+    border: 20px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(to top right, black, silver);
+
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite linear;
+
+}
+
+.imgg {
+    width: 100%;
+    height: 280px;
+}
+
+.img1 {
+    width: 100%;
+    height: 300px;
+
+
+}
+
+.img2 {
+    width: 100%;
+    height: 280px;
+
+}
+
+.img3 {
+    width: 100%;
+    height: 300px;
+
+}
+
+.img4 {
+    width: 100%;
+    height: 280px;
+
+}
+
+.img5 {
+
+    width: 100%;
+    height: 300px;
+
+}
+
+.img6 {
+    width: 100%;
+    height: 280px;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100);
+    }
+
+    55% {
+        transform: translateX(-200);
+    }
+
+    75% {
+        transform: translateX(-200);
+    }
+
+    80% {
+        transform: translateX(-300);
+    }
+
+    100% {
+        transform: translateX(-300);
+    }
+}
+.form {
+    height: 58vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    background-image: linear-gradient(to top right, white, silver)
+}
+
+.login {
+    background-color: aliceblue;
+    border-radius: 7px;
+    max-width: 440px;
+    width: 100%;
+    padding: 40px;
+
+
+}
+
+header {
+    text-align: center;
+    color: black;
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+form {
+    margin-top: 35px;
+
+}
+
+form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 430;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+}
+
+.field input {
+    padding: 0 15px;
+    border: 1px solid paleturquoise;
+
+
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+.forgot span,
+.forgot a {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+.forgot a {
+    text-decoration: none;
+    color: blue;
+
+
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+
+}
+
+
