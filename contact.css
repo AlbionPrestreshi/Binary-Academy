@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top right, black, #83b5e8);
+}
+
+body,
+input,
+textarea,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block 
+    background-color: rgb(20, 19, 19);
+    background-image: linear-gradient(to top right, black, #83b5e8);
+}
+
+.inner_header {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(to top right, black, #83b5e8);
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+
+
+}
+
+.logo h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo h1 span {
+    font-weight: 800;
+}
+
+.lista {
+    float: right;
+    height: 100%;
+
+}
+
+.lista a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    background-image: linear-gradient(to top right, black, #83b5e8)
+}
+
+.lista a:last-child {
+    padding-right: 0;
+
+}
+
+.lista li:hover {
+    background-color: grey cursor: pointer;
+    transition: background .5s;
+    width: 75px;
+    text-align: center;
+    text-decoration-line: underline;
+
+}
+
+.lista a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding-right: 10px
+}
+
+#section-w {
+    width: 100%;
+    padding: 20px;
+
+
+}
+
+.box-wrapper {
+    display: table;
+    margin-top: 37px;
+    margin: auto;
+    width: auto;
+    border-radius: 28px;
+}
+
+.info {
+    width: 40%;
+    padding: 40px;
+    height: 500px;
+    color: aliceblue;
+    float: left;
+    border-radius: 30px 0px 0px 30px;
+    display: block;
+    /*    background-image: linear-gradient(to top right, black, #83b5e8);*/
+    background-color: black
+}
+
+.title {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.titlee {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-top: 19px;
+    line-height: 25px;
+    font-weight: 300;
+
+
+}
+
+.info-details {
+    list-style: none;
+    margin: 50px 0px;
+
+}
+
+.info-details li {
+    margin-top: 23px;
+    color: white;
+    font-size: 17px;
+}
+
+.info-details li i {
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 5px;
+}
+
+.info-details li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.info-details li a:hover {
+    color: darkblue;
+
+
+}
+
+.social-icon {
+    text-align: center;
+    margin: 19px 0px;
+    list-style: none;
+
+}
+
+.social-icon li {
+    display: inline-block;
+}
+
+.social-icon li i {
+
+    color: white;
+    font-size: 19px;
+    border-radius: 20%;
+    padding: 16px;
+    margin: 0px 6px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.social-icon li i:hover {
+    color: black;
+    background: white;
+}
+
+.formwrap {
+    /*    background-image: linear-gradient(to top right, #83b5e8, black);*/
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    padding: 30px 25px 35px 27px;
+    width: 55%;
+    height: 500px;
+    float: right;
+}
+
+.formtitle {
+    text-align: left;
+    margin-left: 25px;
+    font-size: 27px;
+    letter-spacing: 0.5px;
+    color: aliceblue;
+}
+
+.fields {
+    padding: 15px 5px 5px 5px;
+    display: table;
+    width: 100%;
+}
+
+.fields input,
+.fields textarea {
+    font-size: 19px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px 10px 20px 5px;
+    color: white;
+    background: none;
+
+}
+
+.fields textarea {
+    height: 130px;
+    resize: none;
+}
+
+.group {
+    float: left;
+    width: 45%;
+    padding: 0px 30px;
+    margin: 13px 11px;
+    border-radius: 23px;
+}
+
+.fields .group:last-child {
+    width: 95%;
+}
+
+.submit-button {
+    height: 55px;
+    border-radius: 28px;
+    background-image: linear-gradient(to top right, black, #83b5e8);
+    width: 95%;
+    outline: none;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    margin: 0px 13px;
+    font-weight: 650;
+    transition: .5s;
+}
+
+.submit-button:hover {
+    background-image: linear-gradient(to top right, #83b5e8, black);
+}
