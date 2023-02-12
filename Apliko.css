@@ -19,16 +19,10 @@ h1{
 
 .forma{
     background-color:darkslategrey ;
-    color: white;
     height: 400px;
     width: 550px;
-    position: absolute;
-    padding: 25px;
-    margin-left: 700px ;
-    top: 300px;  
-    border: 4px white;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 1px black;
 }
 
