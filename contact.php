@@ -1,6 +1,58 @@
-<html lang="en">
-<html>
+<?php
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // process the form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // validate the form data
+    $errors = array();
+    if (empty($name)) {
+        $errors[] = 'Name is required';
+    }
+    if (empty($email)) {
+        $errors[] = 'Email is required';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is not valid';
+    }
+    if (empty($message)) {
+        $errors[] = 'Message is required';
+    }
+
+    // if there are no errors, save the form data to the database
+    if (empty($errors)) {
+        $db_host = 'localhost';
+        $db_user = 'root';
+        $db_pass = '';
+        $db_name = 'swiss_collection';
+
+        $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+        if (!$conn) {
+            die('Connection failed: ' . mysqli_connect_error());
+        }
+
+        $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
+        if (mysqli_query($conn, $sql)) {
+            echo '<p class="success">Your message has been saved!</p>';
+            $name = $email = $message = '';
+        } else {
+            echo '<p class="error">Sorry, there was a problem saving your message. Please try again later.</p>';
+        }
+
+        mysqli_close($conn);
+    } else {
+        // if there are errors, display them
+        echo '<ul class="error">';
+        foreach ($errors as $error) {
+            echo "<li>$error</li>";
+        }
+        echo '</ul>';
+    }
+}
+
+?>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,21 +67,25 @@
 </head>
 
 <body>
-    <div class="header">
+<div class="header">
         <div class="inner_header">
             <div class="logo">
                 <h1><i>Binary <span>Academy</span></i></h1>
             </div>
             <ul class="lista">
-                <a href="index.html">
+                <a href="index.php">
                     <li>Home</li>
                 </a>
-                <a href="aboutus.html">
+                <a href="aboutus.php">
                     <li>About us</li>
                 </a>
-                <a href="contact.html">
+                <a href="#">
                     <li>Contact</li>
                 </a>
+                <a href="./Logforma/login_form.php">   
+                    <li>Log in</li>
+                </a>
+            
 
             </ul>
         </div>
@@ -88,19 +144,13 @@
                     <h2 class="formtitle">Send us a message</h2>
                     <div class="fields">
                         <div class="group">
-                            <input type="text" class="firstn" placeholder="First Name">
+                            <input type="text" class="firstn"  id="name" name="name" value="<?php echo($name); ?>">
                         </div>
                         <div class="group">
-                            <input type="text" class="lastn" placeholder="Last Name">
+                            <input type="email" class="email" id="email" name="email" value="<?php echo($email); ?>">
                         </div>
                         <div class="group">
-                            <input type="email" class="email" placeholder="Email">
-                        </div>
-                        <div class="group">
-                            <input type="number" class="phone" placeholder="Phone">
-                        </div>
-                        <div class="group">
-                            <textarea name="message" id="" placeholder="Write Your message"></textarea>
+                            <textarea id="message" name="message"><?php echo ($message); ?></textarea>
                         </div>
                     </div>
                     <input type="submit" value="Send Message" class="submit-button">
@@ -116,5 +166,5 @@
 
     </footer>
 
-</body></html>
+</body>
  
