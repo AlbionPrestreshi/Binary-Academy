@@ -84,9 +84,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <label for="category">category:</label>
         <select id="category" name="category">
             <option value="">Select a category</option>
-            <option value="sales" <?php if ($category == 'sales') echo 'selected'; ?>>Sales</option>
-            <option value="support" <?php if ($category == 'support') echo 'selected'; ?>>Support</option>
-            <option value="billing" <?php if ($category == 'billing') echo 'selected'; ?>>Billing</option>
+            <option value="java" <?php if ($category == 'JAVA') echo 'selected'; ?>>JAVA</option>
+            <option value="web" <?php if ($category == 'WEB') echo 'selected'; ?>>WEB</option>
+            <option value="cybersecurity" <?php if ($category == 'Cyber Security') echo 'selected'; ?>>Cyber Security</option>
         </select>
     </div>
                    
