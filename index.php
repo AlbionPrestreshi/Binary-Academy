@@ -24,17 +24,18 @@
                 <h1><i>Binary <span>Academy</span></i></h1>
             </div>
             <ul class="lista">
-                <a href="index.html">
+                <a href="index.php">
                     <li>Home</li>
                 </a>
-                <a href="aboutus.html">
+                <a href="aboutus.php">
                     <li>About us</li>
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                     <li>Contact</li>
                 </a>
-            
-
+                <a href="./Logforma/login_form.php">   
+                    <li>Log in</li>
+                </a>
             </ul>
         </div>
     </div>
@@ -53,7 +54,7 @@
     <div class="permbajtja">
         <img class="fotografia" alt="" src="ballina.jpg" width="800px">
         <div class="mesi">
-            <a href="Apliko.html">
+            <a href="apliko.php">
                 <button class="button1">Apliko</button>
             </a>
         </div>
@@ -70,7 +71,7 @@
             <img src="java.jpg" alt="" height="100px">
             <br>      
             <br>
-            <a href="Apliko.html">
+            <a href="apliko.php">
                 <button class="button_1">Apliko</button>
             </a>
         </div>
@@ -83,7 +84,7 @@
             <img src="web.jpg" alt="" height="100px">
             <br>
             <br>
-            <a href="Apliko.html">
+            <a href="apliko.php">
                 <button class="button_2">Apliko</button>
             </a>
         </div>
@@ -94,7 +95,7 @@
             <p>Web Security, App Security, Software Security, Penetration Testing, etj. </p>
             <img src="cybers.jpg" alt="" height="100px">
             <br>
-            <a href="Apliko.html">
+            <a href="apliko.php">
                 <button class="button_3">Apliko</button>
             </a>
         </div>
@@ -120,21 +121,21 @@
  
     <div id="div1">JAVA
         <br>
-        <a href="Apliko.html">
+        <a href="apliko.php">
             <button class="buttonD_1">Apliko</button>
         </a>
     </div>
 
     <div id="div2">WEB
         <br>
-        <a href="Apliko.html">
+        <a href="apliko.php">
             <button class="buttonD_2">Apliko</button>
         </a>
     </div>
 
     <div id="div3">Cyber Security
         <br>
-        <a href="Apliko.html">
+        <a href="apliko.php">
             <button class="buttonD_3">Apliko</button>
         </a>
     </div>
@@ -167,39 +168,7 @@
     </div>
     
     <footer>
-        <div class="form">
-            <div id="login" class="login">
-                <div class="content">
-                    <header>Sign-in</header>
-
-                    <form action="#">
-                        <div class="field input">
-                            <input type="email" placeholder="Email" id="emaili" class="input">
-                        </div>
-
-                        <div class="field">
-                            <input type="password" placeholder="Password" id="pass" class="password">
-                        </div>
-
-                        <div class="forgot">
-                            <a href="#" class="Forgot Password">Forgot Password?</a>
-                        </div>
-
-                        <div class="field button">
-                            <button>Sign-in
-
-                            </button>
-                        </div>
-
-                        <div class="forgot">
-                            <span>Doesn't have an Account></span> <a href="#" class="Sign-up">Sign-up</a>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-
+       
         <h4>Copyrights – Binary Academy | All rights reserved 2021.</h4>
 
     </footer>

@@ -13,17 +13,18 @@
                 <h1><i>Binary <span>Academy</span></i></h1>
             </div>
             <ul class="lista">
-                <a href="index.html">
+                <a href="index.php">
                     <li>Home</li>
                 </a>
                 <a href="#">
                     <li>About us</li>
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                     <li>Contact</li>
                 </a>
-            
-
+                <a href="./Logforma/login_form.php">   
+                    <li>Log in</li>
+                </a>
             </ul>
         </div>
     </div>
